@@ -13,8 +13,8 @@
 :root {         
   --bg-color:#90ebf1;
   --second-bg-color: #5EE9D2;
-  --text-color: #fff;
-  --main-color: #008080;         
+  --text-color: #1aacac;
+  --main-color: #217cfc;         
 }
 *::selection {
   background: var(--main-color);
@@ -23,6 +23,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   background: var(--bg-color);
@@ -38,8 +39,9 @@ section {
 img {
  
   max-width: 70%;
-  /* filter: drop-shadow(20px 20px 30px rgb(36, 186, 114)); */
-  
+}
+p {
+  max-width: 80rem;
 }
 
 .header{
@@ -201,7 +203,12 @@ span {
 
   text-align: center;
   font-size: 4.5rem;
+  
 
+}
+section > div > h2 {
+ 
+  padding-bottom: 3rem;
 }
 
 .about-content h2 {
