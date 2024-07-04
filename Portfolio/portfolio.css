@@ -29,12 +29,14 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 section {
 
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 10rem 10% 2rem;
+  margin: 0%;
 }
 
 img {
@@ -512,7 +514,7 @@ section > div > h2 {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
   #menu-icon {
     display: block;
@@ -613,7 +615,7 @@ section > div > h2 {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 376px) {
 
   .home-img img {
 
