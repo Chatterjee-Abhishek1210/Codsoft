@@ -13,7 +13,7 @@
 :root {         
   --bg-color:#90ebf1;
   --second-bg-color: #5EE9D2;
-  --text-color: #627a87;
+  --text-color: #ffffff;
   /* --text-color: #008080; */
   --main-color: #217cfc;         
 }
@@ -111,6 +111,21 @@ color:var(--main-color) ;
 
  width: 35v;
  size: 2rem ;
+ animation: flyImage 4s ease-in-out infinite;
+ margin-left: 10%;
+}
+
+@keyframes flyImage {
+
+  0% {
+     transform: translateY(0);
+  }
+  50% {
+     transform: translateY(-2.5rem);
+  }
+  100% {
+     transform: translateY(0);
+  }
 }
 
 
@@ -289,7 +304,7 @@ section > div > h2 {
 .projects-container {
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -474,16 +489,32 @@ section > div > h2 {
     padding: 10rem 3% 2rem;
   }
 
+  .skills {
+
+    padding-bottom: 7rem;
+
+  }
+
+  .projects {
+
+    padding-bottom: 7rem;
+  }
+
+  .contact {
+
+    min-height: auto;
+  }
+
   footer {
 
     padding: 2rem 3%;
   }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   #menu-icon {
-
     display: block;
   }
 
@@ -494,10 +525,16 @@ section > div > h2 {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: var(--bg-color);
+    background:#323e4b;
     border-top: 0.1rem solid;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     border-top: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+
+    display: block;
   }
 
   .navbar a {
@@ -506,4 +543,99 @@ section > div > h2 {
     font-size: 2rem;
     margin: 3rem 0;
   }
+
+  .home {
+
+    flex-direction: column;
+
+  }
+
+  .home-content {
+
+    font-size: 2.6rem;
+
+  }
+
+  .home-content {
+
+    font-size: 5rem;
+  }
+
+  .home-img img {
+
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about img {
+
+    width: 70vw;
+    margin-top: 4rem;
+    margin-right: 20%;
+  }
+
+  .skills h2 {
+
+    margin-bottom: 3rem;
+  }
+
+  .projects h2 {
+
+    margin-bottom: 3rem;
+  }
+
+  .projects-container {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+
+  .projects-container {
+
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 450px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .contact form .input-box input {
+
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .home-img img {
+
+    width: 90vw;
+   
+  }
+
+  .about-img img {
+
+    width: 90vw;
+  }
+
+  .footer {
+
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+
 }
