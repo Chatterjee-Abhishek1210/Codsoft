@@ -11,13 +11,18 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
+/* :root {
   --bg-color: #466c95;
   --second-bg-color: #c47070;
   --text-color: #ffffff;
   --main-color: #f3905b;
+} */
+:root {
+  --bg-color: #0a1323;
+  --second-bg-color: #090202;
+  --text-color: #ffffff;
+  --main-color: #75ce11;
 }
-
 *::selection {
   background: var(--main-color);
   color: var(--bg-color);
@@ -62,7 +67,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background:#323e4b;
+    background:#0258c1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,7 +333,7 @@ section {
 .footer {
   padding: 4rem 0;
   text-align: center;
-  background: rgb(52, 62, 67);
+  background: rgb(55, 62, 65);
   color: var(--second-bg-color);
 }
 
